@@ -1,5 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
+@import 'variables.scss';
+
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+body{
+  font-size: 16px;
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+.container{
+  width: 80%;
+  max-width: 1300px;
+  margin: 60px auto;
+}
+.nav{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  &__menu{
+    grid-auto-flow: row;
+    place-items: center;
+    display: none;
+    @media(min-width:920px){
+      display: grid;
+      grid-auto-flow: column;
+      gap: 1em;
+    }
+    .nav__item{
+      text-decoration: none;
+      font-weight: 700;
+      color: $dark-blue;
+      &:hover{
+        color: $dark-grayish-blue;
+      }
+    }
+  }
+  &__label{
+    cursor: pointer;
+    background-image: url('../images/icon-hamburger.svg');
+    width: 22px;
+    height: 22px;
+    background-repeat: no-repeat;
+    background-position: center;
+    @media(min-width:920px){
+      display: none;
+    }
+  }
+  &__input{
+    display: none;
+  }
+  &__input:checked + .nav__label img{
+    content: url('../images/icon-close.svg');
+  }
+  &__input:checked + &__menu{
+    display: grid;
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    flex-direction: column;
+    top: 50px;
+    padding: 20px 0;
+    @media(min-width:920px){
+      height: 100%;
+      position: initial;
+      padding: 0;
+      width: auto;
+    }
+  }
+  &__cta{
+    display: none;
+    @media(min-width:920px){
+      display: block;
+      
+    }
+  }
+}
+.cta{
+  padding: 17px 30px;
+  border: none;
+  background-color: $bright-red;
+  border-radius: 30px;
+  color: #fff;
+  font-weight: 700;
+  font-size: .8em;
+  -webkit-box-shadow: 0px 4px 10px -4px $bright-red;
+  -moz-box-shadow: 0px 4px 10px -4px $bright-red;
+  box-shadow: 0px 4px 10px -4px $bright-red;
+  &:hover{
+    background-color: #f98f75;
+    cursor: pointer;
+  }
+}
+.nav__hamburguer--open{
+  background-image: url('../images/icon-close.svg');
+  transition: .3s;
 }
