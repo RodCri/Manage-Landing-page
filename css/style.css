@@ -71,6 +71,8 @@ body {
   flex-direction: column;
   top: 50px;
   padding: 20px 0;
+  background-color: floralwhite;
+  transition: linear 0.5s;
 }
 @media (min-width: 920px) {
   .nav__input:checked + .nav__menu {
@@ -109,6 +111,54 @@ body {
 .nav__hamburguer--open {
   background-image: url("../images/icon-close.svg");
   transition: 0.3s;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 40px 0;
+}
+@media (min-width: 920px) {
+  .hero {
+    flex-direction: row;
+    text-align: left;
+    gap: 30px;
+    margin-top: 50px;
+  }
+}
+.hero__figure {
+  width: 100%;
+}
+.hero__figure .illustration {
+  width: 100%;
+  max-width: 540px;
+  display: block;
+  margin: 30px auto;
+}
+.hero__info-title {
+  font-size: 2em;
+  margin-bottom: 16px;
+  color: hsl(228deg, 39%, 23%);
+  font-weight: 700;
+}
+@media (min-width: 920px) {
+  .hero__info-title {
+    font-size: 2.8em;
+  }
+}
+.hero__info-text {
+  font-size: 0.9em;
+  color: hsl(227deg, 12%, 61%);
+  margin-bottom: 30px;
+  line-height: 1.6em;
+}
+@media (min-width: 920px) {
+  .hero__info-text {
+    max-width: 350px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
