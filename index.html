@@ -8,6 +8,7 @@
   <meta name="keywords" content="landing, page, manage">
   <meta name="desc" content="Manage landing page challenge of the frontend mentor">
   <meta name="author" content="Cristian Camilo Rodriguez">
+  <link rel="stylesheet" href="css/swiper.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -62,28 +63,49 @@
       </div>
     </section>
   </article>
+  <section class="testimonial container">
+    <h2 class="testimonial__title">What they’ve said</h2>
+    <div class="slider">
+      <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav"/>
+      <input type="radio" name="slider" title="slide2" class="slider__nav"/>
+      <input type="radio" name="slider" title="slide3" class="slider__nav"/>
+      <input type="radio" name="slider" title="slide4" class="slider__nav"/>
+      <div class="slider__inner">
+        <div class="slider__contents">
+          <img src="images/avatar-ali.png" alt="avatar ali" class="slider__contents-avatar">
+          <h2 class="slider__contents-name">Ali Bravo</h2>
+          <p class="slider__contents-coment">“We have been able to cancel so many other subscriptions since using 
+            Manage. There is no more cross-channel confusion and everyone is much more focused.”</p>
+        </div>
+        <div class="slider__contents">
+          <img src="images/avatar-richard.png" alt="avatar ali" class="slider__contents-avatar">
+          <h2 class="slider__contents-name">Richard Watts</h2>
+          <p class="slider__contents-coment">“Manage allows us to provide structure and process. It keeps us organized 
+            and focused. I can’t stop recommending them to everyone I talk to!”</p>
+        </div>
+        <div class="slider__contents">
+          <img src="images/avatar-shanai.png" alt="avatar ali" class="slider__contents-avatar">
+          <h2 class="slider__contents-name">Shanai Gough</h2>
+          <p class="slider__contents-coment">“Their software allows us to track, manage and collaborate on our projects from anywhere. It keeps the whole team in-sync without being intrusive.”</p>
+        </div>
+        <div class="slider__contents">
+          <img src="images/avatar-anisha.png" alt="avatar ali" class="slider__contents-avatar">
+          <h2 class="slider__contents-name">Anaisha</h2>
+          <p class="slider__contents-coment">“Manage allows us to provide structure and process. It keeps us organized 
+            and focused. I can’t stop recommending them to everyone I talk to!”</p>
+        </div>
+    </div>
+  </section>
+  <div class="get__started container">
+    <button class="cta">Get Started</button>
+  </div>
+  
+    
+  
   <!--
   
-  
-
-  What they’ve said
-
-  Anisha Li
-  “Manage has supercharged our team’s workflow. The ability to maintain 
-  visibility on larger milestones at all times keeps everyone motivated.”
-
-  Ali Bravo
-  “We have been able to cancel so many other subscriptions since using 
-  Manage. There is no more cross-channel confusion and everyone is much 
-  more focused.”
-
-  Richard Watts
-  “Manage allows us to provide structure and process. It keeps us organized 
-  and focused. I can’t stop recommending them to everyone I talk to!”
-
   Shanai Gough
-  “Their software allows us to track, manage and collaborate on our projects 
-  from anywhere. It keeps the whole team in-sync without being intrusive.”
+  
 
   Get Started
 
@@ -103,5 +125,6 @@
 
   Copyright 2020. All Rights Reserved -->
   <script src="js/main.js"></script>
+  <script src="js/swiper.js"></script>
 </body>
 </html>

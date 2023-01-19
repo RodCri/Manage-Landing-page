@@ -242,4 +242,141 @@ body {
   }
 }
 
+.testimonial {
+  text-align: center;
+  height: 450px;
+}
+.testimonial__title {
+  color: hsl(228deg, 39%, 23%);
+  margin-bottom: 2.5em;
+}
+.testimonial .slider {
+  height: 80%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column-reverse;
+  flex-flow: row nowrap;
+  align-items: flex-end;
+  justify-content: center;
+}
+.testimonial .slider__nav {
+  width: 12px;
+  height: 12px;
+  margin: 2em 0.5em;
+  border-radius: 50%;
+  z-index: 10;
+  outline: 4px solid #fff;
+  border: 2px solid hsl(12deg, 88%, 59%);
+  outline-offset: -6px;
+  box-shadow: 0 0 0 0 hsl(12deg, 88%, 59%), 0 0 0 0 hsl(12deg, 88%, 59%);
+  cursor: pointer;
+  appearance: none;
+  backface-visibility: hidden;
+}
+@media (min-width: 900px) {
+  .testimonial .slider__nav:nth-child(3) {
+    display: none;
+  }
+  .testimonial .slider__nav:nth-child(4) {
+    display: none;
+  }
+}
+.testimonial .slider .slider__nav:checked {
+  -webkit-animation: check 0.4s linear forwards;
+  animation: check 0.4s linear forwards;
+}
+.testimonial .slider .slider__nav:checked:nth-of-type(1) ~ .slider__inner {
+  left: 0%;
+}
+.testimonial .slider .slider__nav:checked:nth-of-type(2) ~ .slider__inner {
+  left: -100%;
+}
+@media (min-width: 900px) {
+  .testimonial .slider .slider__nav:checked:nth-of-type(2) ~ .slider__inner {
+    left: -100%;
+  }
+}
+@media (min-width: 1024px) {
+  .testimonial .slider .slider__nav:checked:nth-of-type(2) ~ .slider__inner {
+    left: -30%;
+  }
+}
+.testimonial .slider .slider__nav:checked:nth-of-type(3) ~ .slider__inner {
+  left: -200%;
+}
+.testimonial .slider .slider__nav:checked:nth-of-type(4) ~ .slider__inner {
+  left: -300%;
+}
+.testimonial .slider__inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400%;
+  -webkit-transition: left 0.4s;
+  transition: left 0.4s;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: row nowrap;
+}
+@media (min-width: 900px) {
+  .testimonial .slider__inner {
+    width: 200%;
+  }
+}
+@media (min-width: 1024px) {
+  .testimonial .slider__inner {
+    width: 130%;
+  }
+}
+.testimonial .slider__inner .slider__contents {
+  height: 100%;
+  padding: 0 2rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex: 1;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.testimonial .slider__inner .slider__contents-avatar {
+  width: 70px;
+  height: 70px;
+}
+.testimonial .slider__inner .slider__contents-name {
+  color: hsl(228deg, 39%, 23%);
+  margin: 30px 0;
+}
+.testimonial .slider__inner .slider__contents-coment {
+  color: hsl(227deg, 12%, 61%);
+  margin-bottom: 60px;
+  line-height: 1.6em;
+}
+
+@-webkit-keyframes check {
+  50% {
+    outline-color: hsl(12deg, 88%, 59%);
+  }
+  100% {
+    outline-color: hsl(12deg, 88%, 59%);
+  }
+}
+@keyframes check {
+  50% {
+    outline-color: hsl(12deg, 88%, 59%);
+  }
+  100% {
+    outline-color: hsl(12deg, 88%, 59%);
+  }
+}
+.get__started {
+  display: grid;
+  place-items: center;
+}
+
 /*# sourceMappingURL=style.css.map */
