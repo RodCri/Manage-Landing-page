@@ -107,6 +107,14 @@ body {
   background-color: #f98f75;
   cursor: pointer;
 }
+.cta-simplify {
+  background-color: #fff;
+  color: hsl(12deg, 88%, 59%);
+  font-weight: 700;
+}
+.cta-simplify:hover {
+  background-color: #ffdad1;
+}
 
 .nav__hamburguer--open {
   background-image: url("../images/icon-close.svg");
@@ -377,6 +385,44 @@ body {
 .get__started {
   display: grid;
   place-items: center;
+}
+
+.simplify {
+  background-color: hsl(12deg, 88%, 59%);
+  background-image: url("../images/bg-simplify-section-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  color: #fff;
+  width: 100%;
+  padding: 3em 3em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  align-items: center;
+  text-align: center;
+}
+.simplify__title {
+  font-size: 2em;
+}
+@media (min-width: 720px) {
+  .simplify__title {
+    max-width: 400px;
+    text-align: left;
+  }
+}
+@media (min-width: 720px) {
+  .simplify {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3em 3em;
+    background-image: url("../images/bg-simplify-section-desktop.svg");
+    background-position: left top;
+  }
+}
+@media (min-width: 900px) {
+  .simplify {
+    padding: 3em 7em;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
