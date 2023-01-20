@@ -157,9 +157,12 @@ body{
 .manage{
   display: flex;
   flex-direction: column;
+  width: 94%;
+  align-items: center;
   &__info{
     text-align: center;
     margin-bottom: 3em;
+    width: 80%;
     @media(min-width: 920px){
       text-align: left;
       width: 100%;
@@ -218,6 +221,7 @@ body{
     }
   }
   @media(min-width: 920px){
+    width: 80%;
     flex-direction: row;
     gap: 30px;
   }
@@ -230,7 +234,7 @@ body{
     margin-bottom: 2.5em;
   }
   .slider{
-    height: 80%;
+    height: 90%;
     position: relative;
     overflow: hidden;
     display: flex;
@@ -382,5 +386,75 @@ body{
   }
   @media(min-width: 900px){
     padding: 3em 7em;
+  }
+}
+.footer{
+  width: 100%;
+  background-color: $very-dark-blue;
+  color: #fff;
+  padding: 3em 2.5em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(5, max-content);
+  row-gap: 3em;
+  &__register{
+    grid-column: 1/3;
+    grid-row: 1;
+    display: grid;
+    align-items: center;
+    column-gap: 10px;
+    grid-template-columns: 78% 20%;
+    &-text{
+      height: 50px;
+      border-radius: 30px;
+      &::placeholder{
+        color: $dark-grayish-blue;
+        padding-left: 20px;
+        font-size: 1.2em;
+      }
+    }
+  }
+  &__menu{
+    grid-column: 1/2;
+    grid-row: 2;
+    display: flex;
+    justify-content: space-evenly;
+    li{
+      list-style: none;
+      margin-bottom: 1.3em;
+      font-size: 1.1em;
+      color: $very-light-gray;
+    }
+  }
+  &__menu-left{
+    grid-column: 2/3;
+    grid-row: 2;
+  }
+  &__icons{
+    margin: 1em 0;
+    grid-column: 1/3;
+    grid-row: 3;
+    display: flex;
+    justify-content: space-between;
+    .icon__social{
+      width: 45px;
+      height: 45px;
+    }
+  }
+  &__logo{
+    grid-column: 1/3;
+    grid-row: 4;
+    display: grid;
+    place-items: center;
+    &-img{
+      height: 40px;
+    } 
+  }
+  &__copy{
+    grid-column: 1/3;
+    grid-row: 5;
+    display: grid;
+    place-items: center;
+    color: $dark-grayish-blue;
   }
 }
