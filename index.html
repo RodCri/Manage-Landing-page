@@ -11,81 +11,129 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-  <!-- Pricing
-  Product
-  About Us
-  Careers
-  Community
-
-  Get Started
-
-  Bring everyone together to build better products.
-
-  Manage makes it simple for software teams to plan day-to-day 
-  tasks while keeping the larger team goals in view.
-
-  Get Started
-
-  What’s different about Manage?
-
-  Manage provides all the functionality your team needs, without 
-  the complexity. Our software is tailor-made for modern digital 
-  product teams. 
-
-  01
-  Track company-wide progress
-  See how your day-to-day tasks fit into the wider vision. Go from 
-  tracking progress at the milestone level all the way done to the 
-  smallest of details. Never lose sight of the bigger picture again.
-
-  02
-  Advanced built-in reports
-  Set internal delivery estimates and track progress toward company 
-  goals. Our customisable dashboard helps you build out the reports 
-  you need to keep key stakeholders informed.
-
-  03
-  Everything you need in one place
-  Stop jumping from one service to another to communicate, store files, 
-  track tasks and share documents. Manage offers an all-in-one team 
-  productivity solution.
-
-  What they’ve said
-
-  Anisha Li
-  “Manage has supercharged our team’s workflow. The ability to maintain 
-  visibility on larger milestones at all times keeps everyone motivated.”
-
-  Ali Bravo
-  “We have been able to cancel so many other subscriptions since using 
-  Manage. There is no more cross-channel confusion and everyone is much 
-  more focused.”
-
-  Richard Watts
-  “Manage allows us to provide structure and process. It keeps us organized 
-  and focused. I can’t stop recommending them to everyone I talk to!”
-
-  Shanai Gough
-  “Their software allows us to track, manage and collaborate on our projects 
-  from anywhere. It keeps the whole team in-sync without being intrusive.”
-
-  Get Started
-
-  Simplify how your team works today.
-  Get Started
-
-  Home
-  Pricing
-  Products
-  About Us
-  Careers
-  Community
-  Privacy Policy
-
-  Updates in your inbox…
-  Go
-
-  Copyright 2020. All Rights Reserved -->
+  <!-- <picture class="bg-top">
+    <source srcset="images/bg-simplify-section-desktop.svg" media="(min-width: 920px)" />
+    <img src="images/bg-simplify-section-desktop.svg" alt="">
+  </picture> -->
+  <header class="header container">
+    <nav class="nav">
+      <img src="images/logo.svg" alt="logo" class="nav__logo">
+      <label for="menu" class="nav__label"></label>
+      <input type="checkbox" id="menu" class="nav__input">
+      <div class="nav__menu">
+        <a href="#" class="nav__item">Pricing</a>
+        <a href="#" class="nav__item">Product</a>
+        <a href="#" class="nav__item">About Us</a>
+        <a href="#" class="nav__item">Careers</a>
+        <a href="#" class="nav__item">Community</a>
+      </div>
+      <div class="nav__cta">
+        <button class="cta">Get Started</button>
+      </div>
+    </nav>
+    <section class="hero">
+      <div class="hero__info">
+        <h1 class="hero__info-title">Bring everyone together to build better products.</h1>
+        <p class="hero__info-text">Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.</p>
+        <button class="cta">Get Started</button>
+      </div>
+      <figure class="hero__figure">
+        <img src="images/illustration-intro.svg" alt="illustration-intro" class="illustration">
+      </figure>
+    </section>
+  </header>
+  <article class="manage container">
+    <section class="manage__info">
+      <h2 class="manage__info-title">What’s different about Manage?</h2>
+      <p class="manage__info-desc">Manage provides all the functionality your team needs, without the complexity. Our software is tailor-made for modern digital product teams.</p>
+    </section>
+    <section class="manage__steps">
+      <div class="step">
+        <h4 class="step__title"><span class="step__number">01</span>Track company-wide progress</h4>
+        <p class="step__info">See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.</p>
+      </div>
+      <div class="step">
+        <h4 class="step__title"><span class="step__number">02</span>Advanced built-in reports</h4>
+        <p class="step__info">Set internal delivery estimates and track progress toward company goals. Our customisable dashboard helps you build out the reports you need to keep key stakeholders informed.</p>
+      </div>
+      <div class="step">
+        <h4 class="step__title"><span class="step__number">03</span>Everything you need in one place</h4>
+        <p class="step__info">Stop jumping from one service to another to communicate, store files, track tasks and share documents. Manage offers an all-in-one team productivity solution.</p>
+      </div>
+    </section>
+  </article>
+  <section class="testimonial container">
+    <h2 class="testimonial__title">What they’ve said</h2>
+    <div class="slider">
+      <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav"/>
+      <input type="radio" name="slider" title="slide2" class="slider__nav"/>
+      <input type="radio" name="slider" title="slide3" class="slider__nav"/>
+      <input type="radio" name="slider" title="slide4" class="slider__nav"/>
+      <div class="slider__inner">
+        <div class="slider__contents">
+          <img src="images/avatar-ali.png" alt="avatar ali" class="slider__contents-avatar">
+          <h2 class="slider__contents-name">Ali Bravo</h2>
+          <p class="slider__contents-coment">“We have been able to cancel so many other subscriptions since using 
+            Manage. There is no more cross-channel confusion and everyone is much more focused.”</p>
+        </div>
+        <div class="slider__contents">
+          <img src="images/avatar-richard.png" alt="avatar ali" class="slider__contents-avatar">
+          <h2 class="slider__contents-name">Richard Watts</h2>
+          <p class="slider__contents-coment">“Manage allows us to provide structure and process. It keeps us organized 
+            and focused. I can’t stop recommending them to everyone I talk to!”</p>
+        </div>
+        <div class="slider__contents">
+          <img src="images/avatar-shanai.png" alt="avatar ali" class="slider__contents-avatar">
+          <h2 class="slider__contents-name">Shanai Gough</h2>
+          <p class="slider__contents-coment">“Their software allows us to track, manage and collaborate on our projects from anywhere. It keeps the whole team in-sync without being intrusive.”</p>
+        </div>
+        <div class="slider__contents">
+          <img src="images/avatar-anisha.png" alt="avatar ali" class="slider__contents-avatar">
+          <h2 class="slider__contents-name">Anaisha</h2>
+          <p class="slider__contents-coment">“Manage allows us to provide structure and process. It keeps us organized 
+            and focused. I can’t stop recommending them to everyone I talk to!”</p>
+        </div>
+    </div>
+  </section>
+  <div class="get__started container">
+    <button class="cta">Get Started</button>
+  </div>
+  <section class="simplify">
+    <h2 class="simplify__title">Simplify how your team works today.</h2>
+    <button class="cta cta-simplify">Get Started</button>
+  </section>
+  <footer class="footer">
+    <div class="footer__register">
+      <input type="text" class="footer__register-text" placeholder="Updates in your inbox...">
+      <button class="cta">Go</button>
+    </div>
+    <div class="footer__menu">
+      <ul class="menu">
+        <li class="menu__link">Home</li>
+        <li class="menu__link">Pricing</li>
+        <li class="menu__link">Products</li>
+        <li class="menu__link">About Us</li>
+      </ul>
+    </div>
+    <div class="footer__menu footer__menu-left">
+      <ul class="menu">
+        <li class="menu__link">Careers</li>
+        <li class="menu__link">Community</li>
+        <li class="menu__link">Privacy Policy</li>
+      </ul>
+    </div>
+    <div class="footer__icons">
+      <img src="images/icon-facebook.svg"  class="icon__social" alt="icon-facebook">
+      <img src="images/icon-youtube.svg"   class="icon__social" alt="icon-youtube">
+      <img src="images/icon-twitter.svg"   class="icon__social" alt="icon-twitter">
+      <img src="images/icon-pinterest.svg" class="icon__social" alt="icon-pinterest">
+      <img src="images/icon-instagram.svg" class="icon__social" alt="icon-instagram">
+    </div>
+    <div class="footer__logo">
+      <img src="images/logowhite.svg" alt="logo" class="footer__logo-img">
+    </div>
+    <p class="footer__copy">Copyright 2020. All Rights Reserved</p>
+  </footer>
+  <script src="js/main.js"></script>
 </body>
 </html>
